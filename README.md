@@ -90,13 +90,23 @@ The system is **database-driven** and lets customers:
 ```
 CS3773-Course-Project/
 ├── README.md
-├── .gitignore                      # Unity .gitignore
-└── CS3773-Course Project/          # Unity project root
-    ├── Assets/                     # Scenes, scripts, prefabs, UI, art (WIP)
-    ├── Packages/                   # Unity package manifest
-    ├── ProjectSettings/            # Unity project settings
-    ├── .vscode/
-    └── UML-Draft.png               # Class diagram draft
+├── PRODUCT_BACKLOG.md           # prioritized backlog
+├── USER_STORIES.md              # user stories + test cases
+├── WORKLOAD.md                  # workload distribution report
+├── .gitignore
+│
+├── docs/                        # diagrams (class diagram, state diagram)
+│   └── UML-Draft.png
+|   └── Product Backlog - Online Grocery Store Customer Portal.md
+│
+├── client/                      # Unity front end — the customer portal (C#)   ← exists
+│   ├── Assets/
+│   ├── Packages/
+│   └── ProjectSettings/
+│
+├── server/                      # PHP backend — to be added later
+│
+└── database/                    # MySQL schema + seed data — to be added later
 ```
 
 ---
@@ -133,9 +143,9 @@ The project is graded out of **40 points**:
 - [ ] Commit both diagrams to the repo (e.g. a `docs/` folder)
 
 **Repo & Process**
-- [ ] Create the **product backlog** as a file in the repo (`PRODUCT_BACKLOG.md`)
-- [ ] Confirm all group members are committing (version history shows collaboration)
-- [ ] **Decide on the database** approach and note it here + in the backlog
+- [x] Create the **product backlog** as a file in the repo (`Product Backlog - Online Grocery Store Customer Portal.md`)
+- [x] Confirm all group members are committing (version history shows collaboration)
+- [x] **Decide on the database** approach and note it here + in the backlog
 
 ### 🔜 Due July 30th — Final Delivery
 - [ ] **Source code** implementing all features in the spec
@@ -162,7 +172,7 @@ The project is graded out of **40 points**:
 
 ## Product Backlog
 
-> 📌 Create Product Backlog and send link to it 
+> [Product Backlog](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/main/docs/Product%20Backlog%20-%20Online%20Grocery%20Store%20Customer%20Portal.md)
 
 ---
 
