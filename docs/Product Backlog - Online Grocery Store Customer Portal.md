@@ -15,8 +15,8 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 
 | ID  | User Story                                                              | Priority | Status | Who |
 | --- | ----------------------------------------------------------------------- | -------- | ------ | --- |
-| 1   | Write User Stories for Every Feture                          | High     | To Do  | Aaron/Carlos  |
-| 2 | Commit User Stories | High | To Do | - |
+| 1   | Write User Stories for Every Feture                          | High     | Done  | Aaron/Carlos  |
+| 2 | Commit User Stories | High | Done | Carlos |
 
 
 ---
@@ -24,8 +24,8 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 | ID  | Design Documents & Diagram | Priority | Status | Who   |
 | --- | -------------------------- | -------- | ------ | ----- |
 | 1   | Finalize Class Diagram     | High     | Done   | Bryan |
-| 2   | Finalize State Diagram     | High     | To Do  | Bryan |
-| 3   | Commit both Diagrams       | High     | To Do  | -     |
+| 2   | Finalize State Diagram     | High     | Done | Bryan |
+| 3   | Commit both Diagrams       | High     | Done  | Bryan    |
 
 ---
 
