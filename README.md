@@ -63,7 +63,7 @@ The system is **database-driven** and lets customers:
 
 ## System Design (UML)
 
-![UML](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/main/CS3773-Course%20Project/UML-Draft.png)
+![UML](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/main/docs/UML-Draft.png)
 
 ### Class Summary
 
