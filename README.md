@@ -81,7 +81,7 @@ The system is **database-driven** and lets customers:
 
 ### State Diagram
 
-> 📌 Add the state diagram image here once created: `![Order State Diagram](path/to/order-state-diagram.png)`
+![Order State Diagram](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/main/docs/OrderClassStateDiagram.png)
 
 ---
 
@@ -97,7 +97,9 @@ CS3773-Course-Project/
 │
 ├── docs/                        # diagrams (class diagram, state diagram)
 │   └── UML-Draft.png
+|   └── OrderClassStateDiagram.png
 |   └── Product Backlog - Online Grocery Store Customer Portal.md
+|   └── User Stories
 │
 ├── client/                      # Unity front end — the customer portal (C#)   ← exists
 │   ├── Assets/
@@ -133,14 +135,14 @@ The project is graded out of **40 points**:
 *(Not graded at this date — instructor gives feedback. Counts toward the final.)*
 
 **Testable User Stories**
-- [ ] Write user stories covering every feature area (accounts, addresses, browse/search, cart, checkout, order history)
-- [ ] For **each** user story, write one or more natural-language test cases
-- [ ] Save them as a file in the repo (e.g. `USER_STORIES.md`)
+- [x] Write user stories covering every feature area (accounts, addresses, browse/search, cart, checkout, order history)
+- [x] For **each** user story, write one or more natural-language test cases
+- [x] Save them as a file in the repo (e.g. `USER_STORIES.md`)
 
 **Design Documents & Diagrams**
 - [x] Finalize the **class diagram** (UML-Draft.png is a solid start — confirm attributes/methods/multiplicities)
-- [ ] Create the **state diagram** for one important class (recommended: `Order`, using `status`)
-- [ ] Commit both diagrams to the repo (e.g. a `docs/` folder)
+- [x] Create the **state diagram** for one important class (recommended: `Order`, using `status`)
+- [x] Commit both diagrams to the repo (e.g. a `docs/` folder)
 
 **Repo & Process**
 - [x] Create the **product backlog** as a file in the repo (`Product Backlog - Online Grocery Store Customer Portal.md`)
