@@ -36,9 +36,54 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 
 ---
 
-| ID  | Place Holder | Priority | Status | Who |
-| --- | ------------ | -------- | ------ | --- |
-| 1   | Place Holder | -        | -      | -   |
+| ID  | Database                                                    | Priority | Status | Who |
+| --- | -------------------------------------------------------- | -------- | ------ | --- |
+| DB1 | Design database schema (users, products, cart, orders…)  | High     | Done   | —   |
+| DB2 | Create tables + relationships                            | High     | Done   | —   |
+| DB3 | Seed product catalog with grocery items + images         | High     | Done   | —   |
+| DB4 | Seed discount codes                                      | Med      | Done   | —   |
+| DB5 | Package schema + seed as `schema.sql` for import         | High     | Done   | —   |
 
 ---
 
+| ID   | Backend & PHP                                   | Priority | Status | Who |
+| ---- | --------------------------------------- | -------- | ------ | --- |
+| BE1  | Database connection (`db.php`)          | High     | Done   | —   |
+| BE2  | Register user                           | High     | Done   | —   |
+| BE3  | Log in user                             | High     | Done   | —   |
+| BE4  | Add / get / delete addresses            | High     | Done   | —   |
+| BE5  | Get products (with search + sort)       | High     | Done   | —   |
+| BE6  | Add / get / update / delete cart items  | High     | Done   | —   |
+| BE7  | Validate + apply discount code          | Med      | Done   | —   |
+| BE8  | Place order + save order items          | High     | Done   | —   |
+| BE9  | Get order history                       | Med      | Done   | —   |
+| BE10 | Modify customer information endpoint    | Med      | To Do  | —   |
+
+---
+
+| ID  | Frontend Unity Screens                                                    | Priority | Status | Who |
+| --- | ------------------------------------------------------- | -------- | ------ | --- |
+| FE1 | Server request layer (`UnityWebRequest` + image loader) | High     | Done   | —   |
+| FE2 | Login + Register screens                                | High     | Done   | —   |
+| FE3 | Product catalog (search, sort, images)                  | High     | Done   | —   |
+| FE4 | Shopping cart screen (view, add, remove, quantity)      | High     | Done   | —   |
+| FE5 | Address management screen                               | High     | Done   | —   |
+| FE6 | Checkout screen (subtotal, tax, discount, delivery)     | High     | Done   | —   |
+| FE7 | Order history screen (sort by date / amount)            | Med      | Done   | —   |
+| FE8 | Scene navigation + user session handling                | High     | Done   | —   |
+
+---
+
+| ID  | Integration, Testing, Delivery                                                    | Priority | Status      | Who     |
+| --- | ------------------------------------------------------- | -------- | ----------- | ------- |
+| IN1 | Merge frontend, backend, and database layers            | High     | Done        | — |
+| IN2 | End-to-end test of full flow (register → order history) | High     | Done        | —       |
+| IN3 | MAMP setup guide (`SETUP.md`) + updated README          | High     | Done        | — |
+| IN4 | Organize repo (`CustomerPortal_MAMP`, docs folder)      | Med      | Done        | — |
+| IN5 | Build Windows executable                                | High     | In Progress | —       |
+| IN6 | Publish GitHub Release with downloadable build          | High     | In Progress | —       |
+| IN7 | Unit tests (Unity Test Framework)                       | High     | To Do       | —       |
+| IN8 | Workload Distribution Report (`WORKLOAD.md`)            | High     | To Do       | —       |
+| IN9 | Prepare demo — each member presents their part          | High     | To Do       | All     |
+
+---
