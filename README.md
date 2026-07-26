@@ -83,7 +83,7 @@ There are two ways to run this project. **Both require the backend (MAMP) to be 
 Best for teammates, graders, or a quick demo — **no Unity or source needed.**
 
 1. **Download** the latest **`OnlineGroceryStore-Windows.zip`** from the repo's **[Releases](https://github.com/mbonnic-psx/CS3773-Course-Project/releases)** page and unzip it somewhere easy. Keep `OnlineGroceryStore.exe`, `OnlineGroceryStore_Data/`, and `UnityPlayer.dll` **together in the same folder**.
-2. **Set up the backend** with **[SETUP.md](SETUP.md)** (one time): install MAMP on port 80, copy `CustomerPortal_MAMP` into `htdocs` and rename it to `CustomerPortal`, then import `schema.sql` in phpMyAdmin.
+2. **Set up the backend** with **[SETUP.md](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/integration/MAMP/SETUP.md)** (one time): install MAMP on port 80, copy `CustomerPortal_MAMP` into `htdocs` and rename it to `CustomerPortal`, then import `schema.sql` in phpMyAdmin.
 3. **Run it:** start MAMP (**Start Servers** → green lights), then double-click **`OnlineGroceryStore.exe`**. Register → log in → the catalog loads with images.
 
 > ✔️ Quick check before launching: <http://localhost/CustomerPortal/getProducts.php?search=> should return product JSON. If a "Windows protected your PC" popup appears, click **More info → Run anyway** (the build is unsigned).
@@ -91,16 +91,10 @@ Best for teammates, graders, or a quick demo — **no Unity or source needed.**
 ### Run from Source (Unity)
 Best for development.
 1. Open the **`CS3773-Course Project/`** folder in **Unity 6 (`6000.0.32f1`)**.
-2. Set up the backend using **[SETUP.md](SETUP.md)**.
+2. Set up the backend using **[SETUP.md](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/integration/MAMP/SETUP.md)**.
 3. Open the `LoginScene` and press **Play**.
 
-> ⚠️ **Folder name note:** the backend lives in `CustomerPortal_MAMP/`, but the app calls `http://localhost/CustomerPortal`. When you copy it into MAMP's `htdocs`, **rename the copy to `CustomerPortal`** so the URL matches (no code change needed). Full steps are in [SETUP.md](SETUP.md).
-
-### Publishing a new build to Releases (for the team)
-So people can download without the source:
-1. Unity → **File → Build Settings → Windows → Build**, then **zip the entire build output folder** (`.exe` + `_Data` + `UnityPlayer.dll`) as `OnlineGroceryStore-Windows.zip`.
-2. GitHub → repo → **Releases → Draft a new release** → tag it (e.g. `v1.0-demo`) → **drag the zip into "Attach binaries"** → **Publish release**.
-3. Build with `ServerRequest.SERVER_URL = "http://localhost/CustomerPortal"` (the default) — the URL can't be changed after building.
+> ⚠️ **Folder name note:** the backend lives in `CustomerPortal_MAMP/`, but the app calls `http://localhost/CustomerPortal`. When you copy it into MAMP's `htdocs`, **rename the copy to `CustomerPortal`** so the URL matches (no code change needed). Full steps are in [SETUP.md](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/integration/MAMP/SETUP.md).
 
 ---
 
@@ -210,10 +204,10 @@ The project is graded out of **40 points**:
 
 | Member | GitHub | Responsibilities |
 |---|---|---|
-| Matthew Bonnichsen | [@mbonnic-psx](https://github.com/mbonnic-psx) | _TBD_ |
-| Bryan Banuelos | [@BryanBanuelos](https://github.com/BryanBanuelos) | _TBD_ |
-| Aaron Garza | [@Aaronc07](https://github.com/Aaronc07) | _TBD_ |
-| Carlos Patiño | [@Vily3](https://github.com/Vily3) | _TBD_ |
+| Matthew Bonnichsen | [@mbonnic-psx](https://github.com/mbonnic-psx) | _Project Manager & Github Organizer_ |
+| Bryan Banuelos | [@BryanBanuelos](https://github.com/BryanBanuelos) | _PHP & DB connector_ |
+| Aaron Garza | [@Aaronc07](https://github.com/Aaronc07) | _UI Design & Unity Setup_ |
+| Carlos Patiño | [@Vily3](https://github.com/Vily3) | _QA & Tester_ |
 
 ---
 
