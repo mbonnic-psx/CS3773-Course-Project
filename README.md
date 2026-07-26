@@ -2,8 +2,11 @@
 
 > An Online Grocery System **Customer Portal**: the interface system that shop customers use to browse products, manage their accounts, and place orders with checkout and delivery options.
 >
-> Built with **Unity 6** for **CS3773 Software Engineering**.
+> Built with **Unity 6** (C# frontend) + **PHP / MySQL** backend for **CS3773 Software Engineering**.
 
+> ▶️ **Just want to try it?** You don't need Unity or the source — see **[Download & Play the Build](#download--play-the-build)** below.
+
+---
 
 ## Project Overview
 
@@ -52,12 +55,76 @@ The system is **database-driven** and lets customers:
 |---|---|---|
 | Engine | **Unity** | `6000.0.32f1` (Unity 6) |
 | Language | **C#** | Unity scripting |
-| Rendering | Universal Render Pipeline (URP) | `17.0.3` |
-| UI | Unity UI (uGUI) + UI Toolkit (UIElements) | `2.0.0` |
-| Testing | **Unity Test Framework** | `1.4.5` (unit tests are a required deliverable) |
+| Frontend UI | Unity UI (uGUI) | HTTP via `UnityWebRequest` |
+| Backend | **PHP** | REST-style endpoints in `CustomerPortal_MAMP/` |
+| Database | **MySQL / MariaDB** | database name `CustomerPortal` |
+| Local server | **MAMP** | Apache + MySQL + phpMyAdmin |
+| Testing | Unity Test Framework | `1.4.5` |
 | Version Control | Git + GitHub | - |
-| IDE | Visual Studio / JetBrains Rider / VS Code | - |
-| Database | Unity + PHP + MySQL | - |
+
+---
+
+## How It Works
+
+```
+Unity build (.exe)  ──HTTP──▶  Apache/PHP (CustomerPortal)  ──SQL──▶  MySQL (CustomerPortal)
+     frontend                       backend endpoints                 products, users, orders…
+```
+
+The game talks to the PHP endpoints over HTTP at `http://localhost/CustomerPortal`. The backend **must be running before** the game will load products, log in, or place orders.
+
+---
+
+## Getting Started
+
+There are two ways to run this project. **Both require the backend (MAMP) to be running first.**
+
+### Download & Play the Build
+Best for teammates, graders, or a quick demo — **no Unity or source needed.**
+
+1. **Download** the latest **`OnlineGroceryStore-Windows.zip`** from the repo's **[Releases](https://github.com/mbonnic-psx/CS3773-Course-Project/releases)** page and unzip it somewhere easy. Keep `OnlineGroceryStore.exe`, `OnlineGroceryStore_Data/`, and `UnityPlayer.dll` **together in the same folder**.
+2. **Set up the backend** with **[SETUP.md](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/integration/MAMP/SETUP.md)** (one time): install MAMP on port 80, copy `CustomerPortal_MAMP` into `htdocs` and rename it to `CustomerPortal`, then import `schema.sql` in phpMyAdmin.
+3. **Run it:** start MAMP (**Start Servers** → green lights), then double-click **`OnlineGroceryStore.exe`**. Register → log in → the catalog loads with images.
+
+> ✔️ Quick check before launching: <http://localhost/CustomerPortal/getProducts.php?search=> should return product JSON. If a "Windows protected your PC" popup appears, click **More info → Run anyway** (the build is unsigned).
+
+### Run from Source (Unity)
+Best for development.
+1. Open the **`CS3773-Course Project/`** folder in **Unity 6 (`6000.0.32f1`)**.
+2. Set up the backend using **[SETUP.md](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/integration/MAMP/SETUP.md)**.
+3. Open the `LoginScene` and press **Play**.
+
+> ⚠️ **Folder name note:** the backend lives in `CustomerPortal_MAMP/`, but the app calls `http://localhost/CustomerPortal`. When you copy it into MAMP's `htdocs`, **rename the copy to `CustomerPortal`** so the URL matches (no code change needed). Full steps are in [SETUP.md](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/integration/MAMP/SETUP.md).
+
+---
+
+## Repository Structure
+
+```
+CS3773-Course-Project/
+├── README.md
+├── SETUP.md                      # MAMP + database setup (backend)
+├── .gitignore
+│
+├── CS3773-Course Project/        # Unity 6 project — customer portal frontend (C#)
+│   ├── Assets/
+│   ├── Packages/
+│   └── ProjectSettings/
+│
+├── CustomerPortal_MAMP/          # PHP backend — copy to htdocs (rename to CustomerPortal)
+│   ├── *.php                     # REST endpoints (login, products, cart, orders, …)
+│   ├── db.php                    # DB connection (root/root/CustomerPortal)
+│   ├── schema.sql                # DB schema + seed data — import in phpMyAdmin
+│   └── images/                   # product images
+│
+└── docs/
+    ├── UML-Draft.png                     # class diagram
+    ├── OrderClassStateDiagram.png        # Order state diagram
+    ├── User Stories.md                   # user stories + test cases
+    └── Product Backlog - Online Grocery Store Customer Portal.md
+```
+
+> 🧹 Cleanup note: there are loose `.cs` and `.php` files at the repo root left over from earlier commits. The authoritative copies live inside `CS3773-Course Project/Assets/` and `CustomerPortal_MAMP/`; the root duplicates can be removed.
 
 ---
 
@@ -85,40 +152,6 @@ The system is **database-driven** and lets customers:
 
 ---
 
-## Repository Structure
-
-```
-CS3773-Course-Project/
-├── README.md
-├── PRODUCT_BACKLOG.md           # prioritized backlog
-├── USER_STORIES.md              # user stories + test cases
-├── WORKLOAD.md                  # workload distribution report
-├── .gitignore
-│
-├── docs/                        # diagrams (class diagram, state diagram)
-│   └── UML-Draft.png
-|   └── OrderClassStateDiagram.png
-|   └── Product Backlog - Online Grocery Store Customer Portal.md
-|   └── User Stories
-│
-├── client/                      # Unity front end — the customer portal (C#)   ← exists
-│   ├── Assets/
-│   ├── Packages/
-│   └── ProjectSettings/
-│
-├── server/                      # PHP backend — to be added later
-│
-└── database/                    # MySQL schema + seed data — to be added later
-```
-
----
-
-## Getting Started
-
-> 📌 Add how to run it when we start getting some progress on it 
-
----
-
 ## Deliverables & Checklist
 
 The project is graded out of **40 points**:
@@ -132,40 +165,29 @@ The project is graded out of **40 points**:
 | Product Backlog & History | 10 |
 
 ### ✅ Due June 30th — Project Check-In
-*(Not graded at this date — instructor gives feedback. Counts toward the final.)*
-
-**Testable User Stories**
-- [x] Write user stories covering every feature area (accounts, addresses, browse/search, cart, checkout, order history)
-- [x] For **each** user story, write one or more natural-language test cases
-- [x] Save them as a file in the repo (e.g. `USER_STORIES.md`)
-
-**Design Documents & Diagrams**
-- [x] Finalize the **class diagram** (UML-Draft.png is a solid start — confirm attributes/methods/multiplicities)
-- [x] Create the **state diagram** for one important class (recommended: `Order`, using `status`)
-- [x] Commit both diagrams to the repo (e.g. a `docs/` folder)
-
-**Repo & Process**
-- [x] Create the **product backlog** as a file in the repo (`Product Backlog - Online Grocery Store Customer Portal.md`)
-- [x] Confirm all group members are committing (version history shows collaboration)
-- [x] **Decide on the database** approach and note it here + in the backlog
+- [x] Testable user stories + test cases (`docs/User Stories.md`)
+- [x] Class diagram (`docs/UML-Draft.png`)
+- [x] State diagram (`docs/OrderClassStateDiagram.png`)
+- [x] Product backlog committed (`docs/Product Backlog … .md`)
+- [x] Database approach decided (Unity → PHP → MySQL via MAMP)
 
 ### 🔜 Due July 30th — Final Delivery
-- [ ] **Source code** implementing all features in the spec
-- [ ] **Database** integrated and preloaded with grocery items
+- [ ] Source code implementing all features in the spec
+- [ ] Database integrated and preloaded with grocery items
 - [ ] Account registration + login
 - [ ] Add / manage addresses
 - [ ] Browse + search (sort by price, sort by availability; show price, picture, name)
 - [ ] Shopping cart (view, add, remove)
 - [ ] Checkout: 8.25% tax, discount codes, multiple delivery options, order summary + place order
 - [ ] Order history (sort by date, sort by dollar amount)
-- [ ] **Unit tests** included in the delivered code (Unity Test Framework)
-- [ ] **User stories** updated if the design changed
-- [ ] Final **class diagram** + **state diagram** committed
-- [ ] **Workload Distribution Report** (`WORKLOAD.md`) — work shared evenly across members
-- [ ] Clean version history + product backlog with its change history in the repo
+- [ ] Unit tests included (Unity Test Framework)
+- [ ] User stories updated if the design changed
+- [ ] Final class diagram + state diagram committed
+- [ ] Workload Distribution Report
+- [ ] Clean version history + product backlog change history
 
 ### 🎤 Presentation & Demo — July 28th & 30th
-- [ ] **Every member** presents part of the work
+- [ ] Every member presents part of the work
 - [ ] Live or recorded demo of the major features running
 - [ ] Discuss problems met during development
 - [ ] Keep to **12 min** presentation/demo + **3 min** Q&A
@@ -182,10 +204,10 @@ The project is graded out of **40 points**:
 
 | Member | GitHub | Responsibilities |
 |---|---|---|
-| Matthew Bonnichsen | [@mbonnic-psx](https://github.com/mbonnic-psx) | _TBD_ |
-| Bryan Banuelos | [@BryanBanuelos](https://github.com/BryanBanuelos) | _TBD_ |
-| Aaron Garza | [@Aaronc07](https://github.com/Aaronc07) | _TBD_ |
-| Carlos Patiño | [@Vily3](https://github.com/Vily3) | _TBD_ |
+| Matthew Bonnichsen | [@mbonnic-psx](https://github.com/mbonnic-psx) | _Project Manager & Github Organizer_ |
+| Bryan Banuelos | [@BryanBanuelos](https://github.com/BryanBanuelos) | _PHP & DB connector_ |
+| Aaron Garza | [@Aaronc07](https://github.com/Aaronc07) | _UI Design & Unity Setup_ |
+| Carlos Patiño | [@Vily3](https://github.com/Vily3) | _QA & Tester_ |
 
 ---
 
