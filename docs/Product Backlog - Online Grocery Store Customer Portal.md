@@ -38,11 +38,11 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 
 | ID  | Database                                                    | Priority | Status | Who |
 | --- | -------------------------------------------------------- | -------- | ------ | --- |
-| DB1 | Design database schema (users, products, cart, orders…)  | High     | Done   | —   |
-| DB2 | Create tables + relationships                            | High     | Done   | —   |
-| DB3 | Seed product catalog with grocery items + images         | High     | Done   | —   |
-| DB4 | Seed discount codes                                      | Med      | Done   | —   |
-| DB5 | Package schema + seed as `schema.sql` for import         | High     | Done   | —   |
+| 1 | Design database schema (users, products, cart, orders…)  | High     | Done   | —   |
+| 2 | Create tables + relationships                            | High     | Done   | —   |
+| 3 | Seed product catalog with grocery items + images         | High     | Done   | —   |
+| 4 | Seed discount codes                                      | Med      | Done   | —   |
+| 5 | Package schema + seed as `schema.sql` for import         | High     | Done   | —   |
 
 ---
 
