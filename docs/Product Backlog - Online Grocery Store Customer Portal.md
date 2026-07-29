@@ -38,8 +38,8 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 
 | ID  | Database                                                    | Priority | Status | Who |
 | --- | -------------------------------------------------------- | -------- | ------ | --- |
-| 1 | Design database schema (users, products, cart, orders…)  | High     | Done   | —   |
-| 2 | Create tables + relationships                            | High     | Done   | —   |
+| 1 | Design database schema (users, products, cart, orders…)  | High     | Done   | Bryan |
+| 2 | Create tables + relationships                            | High     | Done   | Bryan |
 | 3 | Seed product catalog with grocery items + images         | High     | Done   | —   |
 | 4 | Seed discount codes                                      | Med      | Done   | —   |
 | 5 | Package schema + seed as `schema.sql` for import         | High     | Done   | —   |
@@ -48,16 +48,16 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 
 | ID   | Backend & PHP                                   | Priority | Status | Who |
 | ---- | --------------------------------------- | -------- | ------ | --- |
-| 1  | Database connection (`db.php`)          | High     | Done   | —   |
-| 2  | Register user                           | High     | Done   | —   |
-| 3  | Log in user                             | High     | Done   | —   |
-| 4  | Add / get / delete addresses            | High     | Done   | —   |
-| 5  | Get products (with search + sort)       | High     | Done   | —   |
-| 6  | Add / get / update / delete cart items  | High     | Done   | —   |
-| 7  | Validate + apply discount code          | Med      | Done   | —   |
-| 8  | Place order + save order items          | High     | Done   | —   |
-| 9  | Get order history                       | Med      | Done   | —   |
-| 10 | Modify customer information endpoint    | Med      | To Do  | —   |
+| 1  | Database connection (`db.php`)          | High     | Done   | Bryan |
+| 2  | Register user                           | High     | Done   | Bryan |
+| 3  | Log in user                             | High     | Done   | Bryan |
+| 4  | Add / get / delete addresses            | High     | Done   | Bryan |
+| 5  | Get products (with search + sort)       | High     | Done   | Bryan |
+| 6  | Add / get / update / delete cart items  | High     | Done   | Bryan |
+| 7  | Validate + apply discount code          | Med      | Done   | Bryan |
+| 8  | Place order + save order items          | High     | Done   | Bryan |
+| 9  | Get order history                       | Med      | Done   | Bryan |
+| 10 | Modify customer information endpoint    | Med      | To Do  | Bryan |
 
 ---
 
