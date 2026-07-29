@@ -64,12 +64,12 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 | ID  | Frontend Unity Screens                                                    | Priority | Status | Who |
 | --- | ------------------------------------------------------- | -------- | ------ | --- |
 | 1 | Server request layer (`UnityWebRequest` + image loader) | High     | Done   | —   |
-| 2 | Login + Register screens                                | High     | Done   | —   |
-| 3 | Product catalog (search, sort, images)                  | High     | Done   | —   |
-| 4 | Shopping cart screen (view, add, remove, quantity)      | High     | Done   | —   |
-| 5 | Address management screen                               | High     | Done   | —   |
-| 6 | Checkout screen (subtotal, tax, discount, delivery)     | High     | Done   | —   |
-| 7 | Order history screen (sort by date / amount)            | Med      | Done   | —   |
+| 2 | Login + Register screens                                | High     | Done   | Aaron  |
+| 3 | Product catalog (search, sort, images)                  | High     | Done   | Aaron   |
+| 4 | Shopping cart screen (view, add, remove, quantity)      | High     | Done   | Aaron  |
+| 5 | Address management screen                               | High     | Done   | Aaron   |
+| 6 | Checkout screen (subtotal, tax, discount, delivery)     | High     | Done   | Aaron   |
+| 7 | Order history screen (sort by date / amount)            | Med      | Done   | Aaron   |
 | 8 | Scene navigation + user session handling                | High     | Done   | —   |
 
 ---
