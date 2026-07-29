@@ -76,7 +76,7 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 
 | ID  | Integration, Testing, Delivery                                                    | Priority | Status      | Who     |
 | --- | ------------------------------------------------------- | -------- | ----------- | ------- |
-| 1 | Merge frontend, backend, and database layers            | High     | Done        | — |
+| 1 | Merge frontend, backend, and database layers            | High     | Done        | Bryan |
 | 2 | End-to-end test of full flow (register → order history) | High     | Done        | —       |
 | 3 | MAMP setup guide (`SETUP.md`) + updated README          | High     | Done        | — |
 | 4 | Organize repo (`CustomerPortal_MAMP`, docs folder)      | Med      | Done        | — |
