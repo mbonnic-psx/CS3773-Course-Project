@@ -21,8 +21,7 @@ _Write your paragraph here (4–5 lines)._
 
 ## Aaron - UI Design & Unity Frontend
 
-_Write your paragraph here (4–5 lines)._
-
+In this project I used Chatgpt to look for guides on unity, and sometimes ask where I could find something. Other usages would be to create a checklist for what I need to get done just so I knew what I needed to work on next.
 ---
 
 ## Carlos - QA & Testing, Frontend support
