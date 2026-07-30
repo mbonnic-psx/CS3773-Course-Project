@@ -196,11 +196,11 @@ The project is graded out of **40 points**:
 
 ## Links
 
-> [Product Backlog](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/main/docs/Product%20Backlog%20-%20Online%20Grocery%20Store%20Customer%20Portal.md)
+- [Product Backlog](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/main/docs/Product%20Backlog%20-%20Online%20Grocery%20Store%20Customer%20Portal.md)
 
-> [Link to Presentation](https://youtu.be/R4nuMcYEbLM)
+- [Link to Presentation](https://youtu.be/R4nuMcYEbLM)
 
-> [LLM Usage Report]()
+- [LLM Usage Report](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/main/docs/LLM_Usage_Report.md)
 
 ---
 
