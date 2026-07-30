@@ -83,7 +83,7 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 | 5 | Build Windows executable                                | High     | Done | Mathew |
 | 6 | Publish GitHub Release with downloadable build          | High     | Done | Mathew |
 | 7 | Unit tests (Unity Test Framework)                       | High     | Done      | Carlos |
-| 8 | Prepare demo           | High     | To Do       | All     |
-| 9 | AI Disclosure           | High     | To Do       | All     |
+| 8 | Prepare demo           | High     | Done       | All     |
+| 9 | AI Disclosure           | High     | Done       | All     |
 
 ---
