@@ -4,7 +4,7 @@
 >
 > Built with **Unity 6** (C# frontend) + **PHP / MySQL** backend for **CS3773 Software Engineering**.
 
-> ▶️ **Just want to try it?** You don't need Unity or the source — see **[Download & Play the Build](#download--play-the-build)** below.
+> ▶️ **Just want to try it?** You don't need Unity or the source - see **[Download & Play the Build](#download--play-the-build)** below.
 
 ---
 
@@ -172,25 +172,27 @@ The project is graded out of **40 points**:
 - [x] Database approach decided (Unity → PHP → MySQL via MAMP)
 
 ### 🔜 Due July 30th — Final Delivery
-- [ ] Source code implementing all features in the spec
-- [ ] Database integrated and preloaded with grocery items
-- [ ] Account registration + login
-- [ ] Add / manage addresses
-- [ ] Browse + search (sort by price, sort by availability; show price, picture, name)
-- [ ] Shopping cart (view, add, remove)
-- [ ] Checkout: 8.25% tax, discount codes, multiple delivery options, order summary + place order
-- [ ] Order history (sort by date, sort by dollar amount)
-- [ ] Unit tests included (Unity Test Framework)
-- [ ] User stories updated if the design changed
-- [ ] Final class diagram + state diagram committed
-- [ ] Workload Distribution Report
-- [ ] Clean version history + product backlog change history
+- [x] Source code implementing all features in the spec
+- [x] Database integrated and preloaded with grocery items
+- [x] Account registration + login
+- [x] Add / manage addresses
+- [x] Browse + search (sort by price, sort by availability; show price, picture, name)
+- [x] Shopping cart (view, add, remove)
+- [x] Checkout: 8.25% tax, discount codes, multiple delivery options, order summary + place order
+- [x] Order history (sort by date, sort by dollar amount)
+- [x] Unit tests included (Unity Test Framework)
+- [x] User stories updated if the design changed
+- [x] Final class diagram + state diagram committed
+- [x] Workload Distribution Report
+- [x] Clean version history + product backlog change history
 
 ### 🎤 Presentation & Demo — July 28th & 30th
-- [ ] Every member presents part of the work
-- [ ] Live or recorded demo of the major features running
-- [ ] Discuss problems met during development
-- [ ] Keep to **12 min** presentation/demo + **3 min** Q&A
+- [x] Every member presents part of the work
+- [x] Live or recorded demo of the major features running
+- [x] Discuss problems met during development
+- [x] Keep to **12 min** presentation/demo + **3 min** Q&A
+
+[Link to Presentation](https://youtu.be/R4nuMcYEbLM)
 
 ---
 
