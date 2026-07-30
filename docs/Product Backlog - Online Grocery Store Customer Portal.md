@@ -79,9 +79,9 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 | 1 | Merge frontend, backend, and database layers            | High     | Done        | Bryan |
 | 2 | End-to-end test of full flow (register → order history) | High     | Done        | Carlos |
 | 3 | MAMP setup guide (`SETUP.md`) + updated README          | High     | Done        | Carlos |
-| 4 | Organize repo (`CustomerPortal_MAMP`, docs folder)      | Med      | Done        | Carlos |
-| 5 | Build Windows executable                                | High     | In Progress | Carlos |
-| 6 | Publish GitHub Release with downloadable build          | High     | In Progress | - |
+| 4 | Organize repo (`CustomerPortal_MAMP`, docs folder)      | Med      | Done        | Carlos/Mathew |
+| 5 | Build Windows executable                                | High     | In Progress | Mathew |
+| 6 | Publish GitHub Release with downloadable build          | High     | In Progress | Mathew |
 | 7 | Unit tests (Unity Test Framework)                       | High     | To Do       | Carlos |
 | 8 | Prepare demo           | High     | To Do       | All     |
 
