@@ -6,6 +6,8 @@
 
 > ▶️ **Just want to try it?** You don't need Unity or the source - see **[Download & Play the Build](#download--play-the-build)** below.
 
+> Git Commits are not accurate of the work group mates did, refer to the backlog for a full understanding of what each of our responsibilities were.
+
 ---
 
 ## Project Overview
