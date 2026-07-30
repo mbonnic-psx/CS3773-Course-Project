@@ -25,7 +25,7 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 | --- | -------------------------- | -------- | ------ | ----- |
 | 1   | Finalize Class Diagram     | High     | Done   | Bryan |
 | 2   | Finalize State Diagram     | High     | Done | Bryan |
-| 3   | Commit both Diagrams       | High     | Done  | Bryan    |
+| 3   | Commit both Diagrams       | High     | Done  | Bryan |
 
 ---
 
@@ -40,9 +40,9 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 | --- | -------------------------------------------------------- | -------- | ------ | --- |
 | 1 | Design database schema (users, products, cart, orders…)  | High     | Done   | Bryan |
 | 2 | Create tables + relationships                            | High     | Done   | Bryan |
-| 3 | Seed product catalog with grocery items + images         | High     | Done   | —   |
-| 4 | Seed discount codes                                      | Med      | Done   | —   |
-| 5 | Package schema + seed as `schema.sql` for import         | High     | Done   | —   |
+| 3 | Seed product catalog with grocery items + images         | High     | Done   | Carlos |
+| 4 | Seed discount codes                                      | Med      | Done   | Carlos |
+| 5 | Package schema + seed as `schema.sql` for import         | High     | Done   | Carlos |
 
 ---
 
@@ -63,26 +63,26 @@ Unity sends requests to the PHP backend (via `UnityWebRequest`), and PHP reads/w
 
 | ID  | Frontend Unity Screens                                                    | Priority | Status | Who |
 | --- | ------------------------------------------------------- | -------- | ------ | --- |
-| 1 | Server request layer (`UnityWebRequest` + image loader) | High     | Done   | —   |
-| 2 | Login + Register screens                                | High     | Done   | Aaron  |
-| 3 | Product catalog (search, sort, images)                  | High     | Done   | Aaron   |
-| 4 | Shopping cart screen (view, add, remove, quantity)      | High     | Done   | Aaron  |
-| 5 | Address management screen                               | High     | Done   | Aaron   |
-| 6 | Checkout screen (subtotal, tax, discount, delivery)     | High     | Done   | Aaron   |
-| 7 | Order history screen (sort by date / amount)            | Med      | Done   | Aaron   |
-| 8 | Scene navigation + user session handling                | High     | Done   | —   |
+| 1 | Server request layer (`UnityWebRequest` + image loader) | High     | Done   | Carlos |
+| 2 | Login + Register screens                                | High     | Done   | Aaron |
+| 3 | Product catalog (search, sort, images)                  | High     | Done   | Aaron |
+| 4 | Shopping cart screen (view, add, remove, quantity)      | High     | Done   | Aaron |
+| 5 | Address management screen                               | High     | Done   | Aaron |
+| 6 | Checkout screen (subtotal, tax, discount, delivery)     | High     | Done   | Aaron |
+| 7 | Order history screen (sort by date / amount)            | Med      | Done   | Aaron |
+| 8 | Scene navigation + user session handling                | High     | Done   | Carlos |
 
 ---
 
 | ID  | Integration, Testing, Delivery                                                    | Priority | Status      | Who     |
 | --- | ------------------------------------------------------- | -------- | ----------- | ------- |
 | 1 | Merge frontend, backend, and database layers            | High     | Done        | Bryan |
-| 2 | End-to-end test of full flow (register → order history) | High     | Done        | —       |
-| 3 | MAMP setup guide (`SETUP.md`) + updated README          | High     | Done        | — |
-| 4 | Organize repo (`CustomerPortal_MAMP`, docs folder)      | Med      | Done        | — |
-| 5 | Build Windows executable                                | High     | In Progress | —       |
-| 6 | Publish GitHub Release with downloadable build          | High     | In Progress | —       |
-| 7 | Unit tests (Unity Test Framework)                       | High     | To Do       | —       |
+| 2 | End-to-end test of full flow (register → order history) | High     | Done        | Carlos |
+| 3 | MAMP setup guide (`SETUP.md`) + updated README          | High     | Done        | Carlos |
+| 4 | Organize repo (`CustomerPortal_MAMP`, docs folder)      | Med      | Done        | Carlos |
+| 5 | Build Windows executable                                | High     | In Progress | Carlos |
+| 6 | Publish GitHub Release with downloadable build          | High     | In Progress | - |
+| 7 | Unit tests (Unity Test Framework)                       | High     | To Do       | Carlos |
 | 8 | Prepare demo           | High     | To Do       | All     |
 
 ---
