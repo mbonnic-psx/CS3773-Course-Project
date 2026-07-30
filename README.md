@@ -192,13 +192,15 @@ The project is graded out of **40 points**:
 - [x] Discuss problems met during development
 - [x] Keep to **12 min** presentation/demo + **3 min** Q&A
 
-[Link to Presentation](https://youtu.be/R4nuMcYEbLM)
-
 ---
 
-## Product Backlog
+## Links
 
 > [Product Backlog](https://github.com/mbonnic-psx/CS3773-Course-Project/blob/main/docs/Product%20Backlog%20-%20Online%20Grocery%20Store%20Customer%20Portal.md)
+
+> [Link to Presentation](https://youtu.be/R4nuMcYEbLM)
+
+> [LLM Usage Report]()
 
 ---
 
@@ -206,15 +208,15 @@ The project is graded out of **40 points**:
 
 | Member | GitHub | Responsibilities |
 |---|---|---|
-| Matthew Bonnichsen | [@mbonnic-psx](https://github.com/mbonnic-psx) | _Project Manager & Github Organizer_ |
-| Bryan Banuelos | [@BryanBanuelos](https://github.com/BryanBanuelos) | _PHP & DB connector_ |
-| Aaron Garza | [@Aaronc07](https://github.com/Aaronc07) | _UI Design & Unity Setup_ |
-| Carlos Patiño | [@Vily3](https://github.com/Vily3) | _QA & Tester_ |
+| Matthew Bonnichsen | [@mbonnic-psx](https://github.com/mbonnic-psx) | _Github & Documentation, Backend support_ |
+| Bryan Banuelos | [@BryanBanuelos](https://github.com/BryanBanuelos) | _Backend, PHP & MySQL_ |
+| Aaron Garza | [@Aaronc07](https://github.com/Aaronc07) | _UI Design & Unity Frontend_ |
+| Carlos Patiño | [@Vily3](https://github.com/Vily3) | _QA & Testing, Frontend support_ |
 
 ---
 
 ## Course Info
 
-- **Course:** CS3773 — Software Engineering
+- **Course:** CS3773 - Software Engineering
 - **Project Option:** Online Grocery System - Customer Portal
 - **Final delivery:** July 30th · **Presentations:** July 28th & 30th
