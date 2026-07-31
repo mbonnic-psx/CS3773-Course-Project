@@ -15,7 +15,7 @@ In this project I only used Claude/Claude Code, the biggest helper for me was us
 
 ## Bryan - Backend, PHP & MySQL
 
-_Write your paragraph here (4–5 lines)._
+For this project I used unity's AI assistant to help integrate my PHP scripts into the C sharp Scripts. This was mostly to help set up the connection to the database because I had never used Unity or C sharp before. I also ran into some problems getting the images to show up from the database and asked ChatGPT to help me reformat the structure that they were in. For the most part I utilized AI to help me write code that would connect different elements of our project together.
 
 ---
 
