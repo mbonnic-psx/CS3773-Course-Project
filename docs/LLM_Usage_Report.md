@@ -22,6 +22,7 @@ For this project I used unity's AI assistant to help integrate my PHP scripts in
 ## Aaron - UI Design & Unity Frontend
 
 In this project I used Chatgpt to look for guides on unity, and sometimes ask where I could find something. Other usages would be to create a checklist for what I need to get done just so I knew what I needed to work on next.
+
 ---
 
 ## Carlos - QA & Testing, Frontend support
